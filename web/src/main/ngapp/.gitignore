@@ -42,9 +42,10 @@ app/**/*.js
 app/**/*.js.map
 
 # IDEs and editors
-/.idea
+.idea
 .project
 .classpath
+.iml
 .c9/
 *.launch
 .settings/
@@ -78,6 +79,9 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-/node_modules/
-/.vscode/
-/dist/
+target/
+/src/main/ngapp/node_modules/
+/src/main/ngapp/dist/
+/.gitignore
+/.metadata/
+
