@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files 
+additonal stylesheets can also be referred in .angular-cli.json
+*/
+@import url("../node_modules/bootstrap/dist/css/bootstrap.min.css"); 
+@import url("../node_modules/font-awesome/css/font-awesome.min.css"); 
+

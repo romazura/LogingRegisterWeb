@@ -1,0 +1,43 @@
+﻿<div class="jumbotron">
+    <div class="container">
+        <div class="d-flex flex-row justify-content-between align-items-center bg-info">
+            <div class="p-1">
+                <a class="btn btn-primary btn-sm" aria-pressed="true" [routerLink]="['/home']" role="button">
+               <i class="fa fa-home" aria-hidden="true"></i> <ng-container i18n> Home</ng-container></a>
+            </div>
+            <div class="p-1">
+                <a class="btn btn-primary btn-sm" aria-pressed="true" [routerLink]="['./user-list']" role="button">
+                <i class="fa fa-address-book-o" aria-hidden="true"></i> <ng-container i18n> Users</ng-container></a>
+            </div>
+            <div class="p-1">
+                <a class="btn btn-primary btn-sm" aria-pressed="true" [routerLink]="['./add-user']" role="button">
+                <i class="fa fa-child" aria-hidden="true"></i> <ng-container i18n> Add user</ng-container></a>
+            </div>
+            <div class="ml-auto p-1">
+                <div ngbDropdown class="text-nowrap">
+                    <a id="profileMenu" ngbDropdownToggle>
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                        <span>{{currentUser?.firstName}}</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right mt-1" aria-labelledby="profileMenu">
+                        <a class="dropdown-item" [routerLink]="['./profile']">
+                            <ng-container i18n>Profile</ng-container>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" tabindex="1" (click)="logout()">
+                            <ng-container i18n>Logout</ng-container>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="p-1">
+                <app-locale></app-locale>
+            </div>
+        </div>
+        <hr>
+        <div class="col-sm-8 col-sm-offset-2">
+            <app-alert></app-alert>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

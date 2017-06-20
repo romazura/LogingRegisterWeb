@@ -1,0 +1,10 @@
+<div class="btn-group btn-group-sm" role="group" aria-label="Switch language">
+    <ng-container *ngFor="let lang of languages">
+        <a *ngIf="lang.code !== getLocaleId()" class="btn btn-outline-secondary btn-sm" href="../{{lang.code}}/">
+            {{lang.code | uppercase}}
+        </a>
+        <a *ngIf="lang.code === getLocaleId()" class="btn btn-outline-secondary btn-sm active">
+            {{lang.code | uppercase}}
+        </a>
+    </ng-container>
+</div>

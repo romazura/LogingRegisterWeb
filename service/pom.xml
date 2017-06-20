@@ -1,0 +1,79 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.roman.app</groupId>
+        <artifactId>roman-app</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>service</artifactId>
+    <name>service</name>
+    <description>Services</description>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.roman.app</groupId>
+            <artifactId>data</artifactId>
+        </dependency>
+
+        <!-- jsonrpc4j -->
+        <dependency>
+            <groupId>com.github.briandilley.jsonrpc4j</groupId>
+            <artifactId>jsonrpc4j</artifactId>
+
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+        
+        <!-- required by jsonrpc4j -->
+        <dependency>
+            <groupId>javax.portlet</groupId>
+            <artifactId>portlet-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+        </dependency>
+        
+        <!-- provided dependencies -->
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+        </dependency>
+        
+        <!-- Spring -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+        </dependency>
+        
+        <!-- Logging -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+        </dependency>
+
+    </dependencies>
+</project>

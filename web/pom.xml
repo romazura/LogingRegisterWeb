@@ -1,0 +1,154 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.roman.app</groupId>
+        <artifactId>roman-app</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>web</artifactId>
+    <packaging>war</packaging>
+    <name>web</name>
+    <description>Client web app</description>
+
+    <properties>
+        <frontend-plugin.version>1.4</frontend-plugin.version>
+        <node.version>v8.0.0</node.version>
+        <npm.version>5.0.3</npm.version>
+        <tomcat.dir>${env.CATALINA_HOME}/webapps</tomcat.dir>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.roman.app</groupId>
+            <artifactId>service</artifactId>
+        </dependency>
+    
+        <!-- Logging -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+        </dependency>
+        
+        <!--  Servlet -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+        </dependency>
+        
+        <!-- jsonrpc4j -->
+        <dependency>
+            <groupId>com.github.briandilley.jsonrpc4j</groupId>
+            <artifactId>jsonrpc4j</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+    </dependencies>
+
+    <profiles>
+        <!-- include Angular app into the build: mvn clean install -P ng-build -->
+        <profile>
+            <id>ng-build</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.github.eirslett</groupId>
+                        <artifactId>frontend-maven-plugin</artifactId>
+                        <version>${frontend-plugin.version}</version>
+                        <configuration>
+                            <workingDirectory>src/main/ngapp</workingDirectory>
+                            <nodeDownloadRoot>https://nodejs.org/dist/</nodeDownloadRoot>
+                            <nodeVersion>${node.version}</nodeVersion>
+                            <npmVersion>${npm.version}</npmVersion>
+                            <installDirectory>target</installDirectory>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>install node and npm</id>
+                                <goals>
+                                    <goal>install-node-and-npm</goal>
+                                </goals>
+                                <phase>generate-resources</phase>
+                            </execution>
+                            <execution>
+                                <id>npm install</id>
+                                <goals>
+                                    <goal>npm</goal>
+                                </goals>
+                                <phase>generate-resources</phase>
+                                <configuration>
+                                    <arguments>install</arguments>
+                                    <installDirectory>target</installDirectory>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>angular cli build EN locale</id>
+                                <goals>
+                                    <goal>npm</goal>
+                                </goals>
+                                <phase>generate-resources</phase>
+                                <configuration>
+                                    <arguments>run build-en</arguments>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>angular cli build RU locale</id>
+                                <goals>
+                                    <goal>npm</goal>
+                                </goals>
+                                <phase>generate-resources</phase>
+                                <configuration>
+                                    <arguments>run build-ru</arguments>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+    <build>
+<!--         <sourceDirectory>src/main/java/com/roman/app</sourceDirectory> -->
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <webResources>
+                        <resource>
+                            <directory>src/main/ngapp/dist</directory>
+                        </resource>
+                    </webResources>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <tasks>
+                                <copy file="${project.build.directory}/${project.build.finalName}.${project.packaging}" tofile="${tomcat.dir}/client.war" overwrite="true" verbose="true"/>
+                            </tasks>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>

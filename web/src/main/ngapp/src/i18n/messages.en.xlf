@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="532aeef3652b4c756595c190da5ce1805d3235c7" datatype="html">
+        <source> Home</source>
+        <target> Home</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="58d9fa4cf314d62dbc091d6f3f0f9afaf377957a" datatype="html">
+        <source> Users</source>
+        <target> Users</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="db40dfeecdc509e24b3ea349b48291affabd4b74" datatype="html">
+        <source> Add user</source>
+        <target> Add user</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="994363f08f9fbfa3b3994ff7b35c6904fdff18d8" datatype="html">
+        <source>Profile</source>
+        <target>Profile</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bb694b49d408265c91c62799c2b3a7e3151c824d" datatype="html">
+        <source>Logout</source>
+        <target>Logout</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c83b838d845690bcb897f775f53b5316535306dc" datatype="html">
+        <source>First Name</source>
+        <target>First Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/user-list/edit-user/edit-user.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/user-list/add-user/add-user.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/profile/edit-profile/edit-profile.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/frontpage/register/register.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5e6548eb9cbb0467c307b4079bc989cd21f44355" datatype="html">
+        <source>This field is required</source>
+        <target>This field is required</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/user-list/edit-user/edit-user.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/user-list/edit-user/edit-user.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/user-list/edit-user/edit-user.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/user-list/edit-user/edit-user.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/user-list/add-user/add-user.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/user-list/add-user/add-user.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/user-list/add-user/add-user.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/user-list/add-user/add-user.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/profile/edit-profile/edit-profile.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/profile/edit-profile/edit-profile.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/profile/edit-profile/edit-profile.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/profile/change-password/change-password.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/profile/change-password/change-password.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/profile/change-password/change-password.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+        <context context-type="sourcefile">app/frontpage/login/login.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/frontpage/login/login.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/frontpage/register/register.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/frontpage/register/register.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/frontpage/register/register.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/frontpage/register/register.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="166b2cc65003221ff5f3ec05d5baca41e6821396" datatype="html">
+        <source>Last Name</source>
+        <target>Last Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/user-list/edit-user/edit-user.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/user-list/add-user/add-user.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/profile/edit-profile/edit-profile.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/frontpage/register/register.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="08c74dc9762957593b91f6eb5d65efdfc975bf48" datatype="html">
+        <source>Username</source>
+        <target>Username</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/user-list/edit-user/edit-user.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/user-list/add-user/add-user.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+        <context context-type="sourcefile">app/home/user-list/user-list.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/profile/edit-profile/edit-profile.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/frontpage/login/login.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/frontpage/register/register.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c32ef07f8803a223a83ed17024b38e8d82292407" datatype="html">
+        <source>Password</source>
+        <target>Password</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/user-list/edit-user/edit-user.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/user-list/add-user/add-user.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/frontpage/login/login.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/frontpage/register/register.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="52c9a103b812f258bcddc3d90a6e3f46871d25fe" datatype="html">
+        <source>Save</source>
+        <target>Save</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/user-list/edit-user/edit-user.component.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/profile/edit-profile/edit-profile.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d7b35c384aecd25a516200d6921836374613dfe7" datatype="html">
+        <source>Cancel</source>
+        <target>Cancel</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/user-list/edit-user/edit-user.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/user-list/add-user/add-user.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/profile/edit-profile/edit-profile.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/profile/change-password/change-password.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/frontpage/register/register.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="70a67e04629f6d412db0a12d51820b480788d795" datatype="html">
+        <source>Create</source>
+        <target>Create</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/user-list/add-user/add-user.component.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="45cc8ca94b5a50842a9a8ef804a5ab089a38ae5c" datatype="html">
+        <source>ID</source>
+        <target>ID</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/user-list/user-list.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="62b6c66981335ca6eecc36b331103c60f09d1026" datatype="html">
+        <source>First name</source>
+        <target>First name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/user-list/user-list.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6ce3dadf53dda1a1ab0c3167a8ed8dced471b0dc" datatype="html">
+        <source>Last name</source>
+        <target>Last name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/user-list/user-list.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="96e678d5f4bfe1a041ecfcd34804efa5e100d5e8" datatype="html">
+        <source>Delete Selected</source>
+        <target>Delete Selected</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/user-list/user-list.component.ts</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="28f86ffd419b869711aa13f5e5ff54be6d70731c" datatype="html">
+        <source>Edit</source>
+        <target>Edit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/profile/profile-menu/profile-menu.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5edf054f14aa57bc25a28cb7db01956fee53dac8" datatype="html">
+        <source>Change Password</source>
+        <target>Change Password</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/profile/profile-menu/profile-menu.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/profile/change-password/change-password.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0dd390d056411e1709ec97ec51c46d78600e3f7b" datatype="html">
+        <source>Current password</source>
+        <target>Current password</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/profile/change-password/change-password.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e70e209561583f360b1e9cefd2cbb1fe434b6229" datatype="html">
+        <source>New password</source>
+        <target>New password</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/profile/change-password/change-password.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ede41f01c781b168a783cfcefc6fb67d48780d9b" datatype="html">
+        <source>Confirm new password</source>
+        <target>Confirm new password</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/profile/change-password/change-password.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6765b4c916060f6bc42d9bb69e80377dbcb5e4e9" datatype="html">
+        <source>Login</source>
+        <target>Login</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/frontpage/login/login.component.ts</context>
+          <context context-type="linenumber">2</context>
+          </context-group>
+      </trans-unit>
+      <trans-unit id="9eb24f062e9063eed7559d5193702fc3b8162c59" datatype="html">
+        <source> Login</source>
+        <target> Login</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/frontpage/login/login.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cfc2f436ec2beffb042e7511a73c89c372e86a6c" datatype="html">
+        <source>Register</source>
+        <target>Register</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/frontpage/login/login.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/frontpage/register/register.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/frontpage/register/register.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

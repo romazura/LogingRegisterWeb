@@ -1,0 +1,6 @@
+﻿<ngb-alert *ngIf="message" [type]="message.type === 'error' ? 'danger' : 'success'" (close)="dismiss()">
+    <i class="fa" aria-hidden="true" [ngClass]="{ 'fa-check-circle': message.type === 'success', 'fa-exclamation-circle': message.type === 'error' }"></i>
+    <ng-container [ngSwitch]="message.text">
+        <ng-container *ngSwitchDefault>{{message.text}}</ng-container>
+    </ng-container>
+</ngb-alert>

@@ -1,0 +1,57 @@
+<div>
+    <div class="row flex-nowrap">
+
+        <div class="col-1" style="border:1px solid black; padding-left:10px; padding-right: 5px">
+            <a (click)="sort('id')">
+                <span class="sort-field " [ngClass]="isCurrent('id') ? 'current-sort' : 'passive-sort'">
+                    <ng-container i18n>ID</ng-container>
+                    <span *ngIf="isCurrent('id')" class="fa" [ngClass]="sortAsc ? 'fa-caret-up' : 'fa-caret-down'"></span>
+            </span></a>
+        </div>
+
+        <div class="col" style="border:1px solid black">
+            <a (click)="sort('username')">
+                <span class="sort-field" [ngClass]="isCurrent('username') ? 'current-sort' : 'passive-sort'">
+                    <ng-container i18n>Username</ng-container>
+                    <span *ngIf="isCurrent('username')" class="fa" [ngClass]="sortAsc ? 'fa-caret-up' : 'fa-caret-down'"></span>
+            </span></a>
+        </div>
+        <div class="col" style="border:1px solid black">
+            <a (click)="sort('firstName')">
+                <span class="sort-field" [ngClass]="isCurrent('firstName') ? 'current-sort' : 'passive-sort'">
+                    <ng-container i18n>First name</ng-container>
+                    <span *ngIf="isCurrent('firstName')" class="fa" [ngClass]="sortAsc ? 'fa-caret-up' : 'fa-caret-down'"></span>
+            </span></a>
+        </div>
+        <div class="col" style="border:1px solid black">
+            <a (click)="sort('lastName')">
+                <span class="sort-field" [ngClass]="isCurrent('lastName') ? 'current-sort' : 'passive-sort'">
+                    <ng-container i18n>Last name</ng-container>
+                    <span *ngIf="isCurrent('lastName')" class="fa" [ngClass]="sortAsc ? 'fa-caret-up' : 'fa-caret-down'"></span>
+            </span></a>
+        </div>
+        <div class="col-1" style="border:1px solid black"></div>
+        <div class="col-1" style="border:1px solid black">
+            <input type="checkbox" (change)="allChecked($event.target.checked)">
+        </div>
+    </div>
+
+    <div *ngFor="let user of users">
+        <div class="row flex-nowrap">
+            <div class="col-1" style="border:1px solid black">{{user.id}}</div>
+            <div class="col" style="border:1px solid black">{{user.username}}</div>
+            <div class="col" style="border:1px solid black">{{user.firstName}}</div>
+            <div class="col" style="border:1px solid black">{{user.lastName}}</div>
+            <div class="col-1" style=" border:1px solid black">
+                <a [routerLink]="['../edit-user', user.id]"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></div>
+            <div class="col-1" style="border:1px solid black">
+                <input type="checkbox" [checked]="isUserChecked(user.id)" (change)="userChecked($event.target.checked, user.id)">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <button (click)="deleteSelected()" type="button" class="btn btn-primary pull-left" autocomplete="off">
+            <ng-container i18n>Delete Selected</ng-container>
+    </button>
+
+</div>

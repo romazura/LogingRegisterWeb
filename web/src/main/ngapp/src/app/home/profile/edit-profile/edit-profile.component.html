@@ -1,0 +1,37 @@
+<form name="form" (ngSubmit)="f.form.valid && save()" #f="ngForm" novalidate>
+    <div class="form-group row" [ngClass]="{ 'has-danger': f.submitted && !firstName.valid }">
+        <label class="col-sm-2 col-form-label" for="firstName" i18n>First Name</label>
+        <div class="col-sm-5">
+            <input class="form-control" type="text" required="required" autofocus="autofocus" id="firstName" name="firstName" [(ngModel)]="model.firstName"
+                #firstName="ngModel" />
+            <div *ngIf="f.submitted && !firstName.valid" class="form-control-feedback" i18n>This field is required</div>
+        </div>
+    </div>
+    <div class="form-group row" [ngClass]="{ 'has-danger': f.submitted && !lastName.valid }">
+        <label class="col-sm-2 col-form-label" for="lastName" i18n>Last Name</label>
+        <div class="col-sm-5">
+            <input class="form-control" type="text" required="required" id="lastName" name="lastName" [(ngModel)]="model.lastName" #lastName="ngModel"
+            />
+            <div *ngIf="f.submitted && !lastName.valid" class="form-control-feedback" i18n>This field is required</div>
+        </div>
+    </div>
+    <div class="form-group row" [ngClass]="{ 'has-danger': f.submitted && !username.valid }">
+        <label class="col-sm-2 col-form-label" for="username" i18n>Username</label>
+        <div class="col-sm-5">
+            <input class="form-control" type="text" required="required" id="username" name="username" [(ngModel)]="model.username" #username="ngModel"
+            />
+            <div *ngIf="f.submitted && !username.valid" class="form-control-feedback" i18n>This field is required</div>
+        </div>
+    </div>
+    <hr/>
+
+    <div class="form-group">
+        <button [disabled]="loading" type="submit" class="btn btn-success" autocomplete="off">
+            <i *ngIf="loading" class="fa fa-circle-o-notch fa-spin"></i>
+            <ng-container i18n>Save</ng-container>
+        </button>
+        <button (click)="cancel()" type="button" class="btn btn-secondary" autocomplete="off">
+            <ng-container i18n>Cancel</ng-container>
+        </button>
+    </div>
+</form>
