@@ -39,11 +39,11 @@
     * Directives <https://angular.io/docs/ts/latest/guide/attribute-directives.html>
 
 ## Next steps
-<del>1. Add maven build - build the app as .war</del>
-<del>1. Deploy the app to Tomcat</del>
-<del>1. Add JSON-RPC support</del>
-<del>1. Multimodule Maven project</del>
-<del>1. Add Spring support</del>
+1. <del>Add maven build - build the app as .war
+1. <del>Deploy the app to Tomcat
+1. <del>Add JSON-RPC support
+1. <del>Multimodule Maven project
+1. <del>Add Spring support
 1. Support Spring transactions
 1. Spring Data
 1. JPA/Hibernate 
