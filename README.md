@@ -11,8 +11,7 @@
 * home component  (as separate module)
     * user list
     * add/edit user
-    * send message to seleted user
-    * read messages
+    * change password
     
 ### Resources
 * https://v4-alpha.getbootstrap.com/getting-started/introduction/
@@ -40,11 +39,11 @@
     * Directives <https://angular.io/docs/ts/latest/guide/attribute-directives.html>
 
 ## Next steps
-1. Add maven build - build the app as .war
-1. Deploy the app to Tomcat
-1. Add JSON-RPC support 
-1. Multimodule Maven project
-1. Add Spring support 
+<del>1. Add maven build - build the app as .war</del>
+<del>1. Deploy the app to Tomcat</del>
+<del>1. Add JSON-RPC support</del>
+<del>1. Multimodule Maven project</del>
+<del>1. Add Spring support</del>
 1. Support Spring transactions
 1. Spring Data
 1. JPA/Hibernate 
@@ -83,10 +82,8 @@
 
 * create Java DTO objects that corresponds to your client-side data model
 * for each your service create Servlet that is using JsonRpcServer
-    * see example in `core/base/.../AbstratcJsonRpcServiceProxy`
 * register servletes in web.xml
 * in the client app call services for both development and production modes
-    * example is at `web/client/.../ngapp/src/app/proxy_v01/service.ts`
 
 ### Multimodule Maven project
 * refactor the project to the following structure
@@ -118,7 +115,6 @@
 * create service-context.xml descriptor in service project
 * register services as beans in the context
 * create ServiceContext singletone to access service instances
-    * see example in `core/base/.../AbstractSpringContext`
 * use ServiceContext beans from JSON-RPC servlets
 
 ### Support Spring transactions
