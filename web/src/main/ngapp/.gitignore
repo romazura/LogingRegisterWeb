@@ -45,7 +45,7 @@ app/**/*.js.map
 .idea
 .project
 .classpath
-.iml
+*.iml
 .c9/
 *.launch
 .settings/
